@@ -21,8 +21,9 @@ class SSHSALT(Base):
     def get_host(self):
         # 获取未采集的主机列表：
         response = requests.get(settings.API)
-        result = json.loads(response.text) # "{status:'True',data: ['c1.com','c2.com']}"
-        if not result['status']:
+        #result = json.loads() # "{status:'True',data: ['c1.com','c2.com']}"
+        result = {'status':'True','data': ['web07',]}
+	if not result['status']:
             return
         return result['data']
 
