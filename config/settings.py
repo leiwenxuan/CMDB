@@ -8,8 +8,8 @@ BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 USER = 'root'
 PWD = "sdfsdf"
 
-MODE = "AGENT" # SALT,SSH
-# MODE = "SALT" # SALT,SSH
+#MODE = "AGENT" # SALT,SSH
+MODE = "SALT"  # SALT,SSH
 
 DEBUG = True
 
